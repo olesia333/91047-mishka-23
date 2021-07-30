@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Интернет-магазин Мишка. Главная</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-nav">
+              <li class="user-nav__search">
+                <a href="blank.html" aria-label="Поиск по сайту">
+                  <span>Поиск по сайту</span>
+                </a>
+              </li>
+              <li class="user-nav__cart">
+                <a href="blank.html">
+                  <span>Корзина: пока пуста</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__list additional-nav">
+              <li class="additional-nav__item">
+                <a href="blank.html">Новые поступления</a>
+              </li>
+              <li class="additional-nav__item">
+                <a href="blank.html">Распродажа</a>
+              </li>
+            </ul>
+            <p class="main-nav__delivery-info">
+              Бесплатная доставка по России
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин «Мишка»</h1>
+      <section class="page-container categories">
+        <h2 class="categories__title">Милые штуки ручной <br> работы для дома</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="blank.html" class="categories__link categories__interior">Предметы интерьера</a>
+          </li>
+          <li class="categories__item">
+            <a href="blank.html" class="categories__link categories__toys">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-container features">
+        <h2 class="visually-hidden">Акционные товары</h2>
+        <article class="features__product product-full">
+          <h3 class="product-full__title">Вязаные корзинки</h3>
+          <p class="product-full__sticker">Товар недели</p>
+          <p class="product-full__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="product-full__property property-table">
+            <tr class="property-table__headers">
+              <th class="property-table__header">Цвет:</th>
+              <th class="property-table__header">Диаметр:</th>
+              <th class="property-table__header">Высота:</th>
+            </tr>
+            <tr class="property-table__values">
+              <td class="property-table__value">«Тиффани»/серый</td>
+              <td class="property-table__value">25 см</td>
+              <td class="property-table__value">15 см</td>
+            </tr>
+          </table>
+          <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Набор из трех вязаных корзинок разных размеров" class="product-full__img">
+          <p class="product-full__price">Цена: 990 руб.</p>
+          <button class="product-full_button" type="button" aria-label="Заказать товар">Заказать</button>
+        </article>
+      </section>
+      <section class="page-container about-us">
+        <div class="about-us__wrapper">
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <ul class="about-us__list">
+            <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
+            <li class="about-us__item about-us__item--price">Скандинавский стиль по российской цене</li>
+            <li class="about-us__item about-us__item--beauty">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="about-us__item about-us__item--region">Поддержка отечественного<br>производителя</li>
+            <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__list slider__list">
+              <blockquote class="reviews__item slider__item slider__item--active">
+                <p class="reviews__text slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author">Анастасия Красильникова</cite>
+                <p class="reviews__username">@misssssiskras</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__contact">Екатерина Красильникова</cite>
+                <p class="reviews__username">@misssssiskras2</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item">
+                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author">Елена Красильникова</cite>
+                <p class="reviews__username">@misssssiskras3</p>
+              </blockquote>
+            </div>
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle-prev" type="button" aria-label="Cлайд назад"><span class="visually-hidden">Назад</span>
+              </button>
+              <button class="slider__toggle slider__toggle-next" type="button" aria-label="Cлайд вперед"><span class="visually-hidden">Вперед</span>
+              </button>
+            </p>
+            <a class="reviews__button" href="blank.html">Написать</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="page-container">
+          <h2 class="contact-us__title">Контакты</h2>
+          <table class="contact-us__table contacts-table">
+            <tr class="contacts-table__headers">
+              <th class="contacts-table__header">e-mail:</th>
+              <th class="contacts-table__header">адрес:</th>
+            </tr>
+            <tr class="contacts-table__values">
+              <td class="contacts-table__value">
+                <a class="contact-us__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+              <td class="contacts-table__value">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contact-us__map">
+          <!--Здесь будет карта-->
+        </div>
+        <a class="contact-us__button" href="blank.html">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-container">
+        <a class="footer-logo__link" href="#">
+          <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин Мишка»">
+        </a>
+        <ul class="page-footer__social social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Твитер</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="35" alt="Логотип html академии»">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal">
+      <div class="modal__wrapper add-cart">
+        <h3 class="add-cart__title">Добавить в корзину</h3>
+        <form action="https://echo.htmlacademy.ru/" class="add-cart__form">
+          <fieldset class="add-cart__group">
+            <legend class="add-cart__title-group">Выберите размер:</legend>
+            <ul class="add-cart__list">
+              <li class="add-cart__item">
+                <input type="radio" class="add-cart__input" value="S" name="value" id="s">
+                <label for="s" class="add-cart__label">S</label>
+              </li>
+              <li class="add-cart__item">
+                <input type="radio" class="add-cart__input" value="M" name="value" id="m">
+                <label for="m" class="add-cart__label">M</label>
+              </li>
+              <li class="add-cart__item">
+                <input type="radio" class="add-cart__input" value="L" name="value" id="l">
+                <label for="l" class="add-cart__label">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="add-cart__button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
