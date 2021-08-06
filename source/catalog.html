@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Интернет-магазин Мишка. Главная</title>
+    <title>Интернет-магазин Мишка. Каталог</title>
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="container">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Магазин Мишка»">
         </a>
         <nav class="main-nav">
@@ -58,117 +58,86 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-heading page-heading--index">
-        <h1 class="page-heading__title">Милые штуки ручной <br> работы для дома</h1>
+      <div class="page-heading page-heading--inner">
+        <h1 class="page-heading__title">Каталог товаров</h1>
       </div>
-      <div class="container categories">
-        <ul class="categories__list">
-          <li class="categories__item">
-            <a href="blank.html" class="categories__link categories__link--interior">Предметы интерьера</a>
+      <section class="catalog container">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__info">
+                <h3 class="product__title">Зайчик-попрыгайчик</h3>
+                <p class="product__description">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="product__image-wrapper">
+                <img src="img/rubbit.jpg" class="product__img" alt="Вязаный зайчик голубого цвета с бежевыми ушами и головой" width="260" height="195">
+              </div>
+              <div class="product__cost-wrapper">
+                <p class="product__cost">1 200 руб.</p>
+                <button class="product__button" type="button" aria-label="Добавить товар в корзину">
+                  <svg class="product__button-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                    </svg>
+                </button>
+              </div>
+            </article>
           </li>
-          <li class="categories__item">
-            <a href="blank.html" class="categories__link categories__link--toys">Детские игрушки</a>
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__info">
+                <h3 class="product__title">Корзинка для белья</h3>
+                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product__image-wrapper">
+                <img src="img/knitting-cart.jpg" class="product__img" alt="Вязанная текстильная корзина" width="260" height="195">
+              </div>
+              <div class="product__cost-wrapper">
+                <p class="product__cost">690 руб.</p>
+                <button class="product__button" type="button" aria-label="Добавить товар в корзину">
+                  <svg class="product__button-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                    </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__info">
+                <h3 class="product__title">Большая корзинка для игрушек</h3>
+                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__image-wrapper">
+                <img src="img/toys-cart.jpg" class="product__img" alt="Вязанная текстильная корзина с игрушками" width="260" height="195">
+              </div>
+              <div class="product__cost-wrapper">
+                <p class="product__cost">1 500 руб.</p>
+                <button class="product__button" type="button" aria-label="Добавить товар в корзину">
+                  <svg class="product__button-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                    </svg>
+                </button>
+              </div>
+            </article>
           </li>
         </ul>
-      </div>
-      <section class="container promo">
-        <h2 class="visually-hidden">Акционные товары</h2>
-        <article class="promo__product product-full">
-          <h3 class="product-full__title">Вязаные корзинки</h3>
-          <p class="product-full__sticker">Товар недели</p>
-          <p class="product-full__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-          <table class="product-full__property property-table">
-            <tr class="property-table__row">
-              <th class="property-table__header">Цвет:</th>
-              <td class="property-table__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="property-table__row">
-              <th class="property-table__header">Диаметр:</th>
-              <td class="property-table__value">25 см</td>
-            </tr>
-            <tr class="property-table__row">
-              <th class="property-table__header">Высота:</th>
-              <td class="property-table__value">15 см</td>
-            </tr>
-          </table>
-          <img class="product-full__img" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Набор из трех вязаных корзинок разных размеров" class="product-full__img">
-          <p class="product-full__price">Цена: 990 руб.</p>
-          <button class="product-full__button" type="button" aria-label="Добавить товар в корзину">Заказать</button>
-        </article>
       </section>
-      <section class="container about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
-            <li class="about-us__item about-us__item--price">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item about-us__item--beauty">Увеличивает лайки на фотографиях</li>
-            <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item about-us__item--region">Поддержка отечественного<br>производителя</li>
-            <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
-          </ul>
+      <section class="container video">
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__wrapper player">
+          <img class="player__cover" src="img/video-mobile.jpg" alt="Обложка видео - корзинка мятного цвета">
+          <button class="player__button" type="button" aria-label="Воспроизвести видео"><span class="visually-hidden">Включить видео</span></button>
         </div>
-      </section>
-      <section class="reviews">
-        <div class="slider">
-          <div class="slider__wrapper">
-            <h2 class="reviews__title">Отзывы</h2>
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item slider__item--active">
-                <p class="reviews__text slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <div class="reviews__name">
-                  <cite class="reviews__author">Анастасия Красильникова</cite>
-                  <p class="reviews__username">@misssssiskras</p>
-                </div>
-              </blockquote>
-              <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <div class="reviews__name">
-                  <cite class="reviews__author">Екатерина Красильникова</cite>
-                  <p class="reviews__username">@misssssiskras2</p>
-                </div>
-              </blockquote>
-              <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <div class="reviews__name">
-                  <cite class="reviews__author">Елена Красильникова</cite>
-                  <p class="reviews__username">@misssssiskras3</p>
-                </div>
-              </blockquote>
-            </div>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle-prev" type="button" aria-label="Cлайд назад"></button>
-              <button class="slider__toggle slider__toggle-next" type="button" aria-label="Cлайд вперед"></button>
-            </p>
-            <a class="reviews__button" href="blank.html">Написать</a>
-          </div>
+        <div class="video__info-wrapper">
+          <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="form.html" class="video__button">Cделать заказ</a>
         </div>
-      </section>
-      <section class="contact-us">
-        <div class="container">
-          <h2 class="contact-us__title">Контакты</h2>
-          <table class="contact-us__table contacts-table">
-            <tr class="contacts-table__row">
-              <th class="contacts-table__header">e-mail:</th>
-              <td class="contacts-table__value">
-                <a class="contact-us__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </td>
-            </tr>
-            <tr class="contacts-table__row">
-              <th class="contacts-table__header">адрес:</th>
-              <td class="contacts-table__value">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</td>
-            </tr>
-          </table>
-        </div>
-        <div class="contact-us__map">
-          <!--Здесь будет карта-->
-        </div>
-        <a class="contact-us__button" href="blank.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__icon-link" width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2694 21.3813C19.1691 18.6962 18.7681 16.1105 18.7681 13.4255C18.7681 11.2376 19.1691 9.04976 18.3671 6.96135C18.3671 6.76246 18.4673 6.46411 18.4673 6.26522C18.6678 5.27074 15.1589 5.76798 14.6576 6.76246C14.3569 7.0608 14.1564 7.35914 14.2566 7.75694C14.2566 7.85638 14.3569 7.95583 14.3569 8.05528C13.6551 11.2376 12.7528 14.3205 11.7503 17.4034C11.3492 18.5967 10.848 19.6907 10.4469 20.884C9.84542 19.7901 9.24389 18.6962 8.84287 17.5028C7.4393 14.1216 6.23625 10.6409 4.53192 7.35914C4.73243 5.86743 1.32377 5.96688 0.621988 7.35914C-0.180049 9.04976 -0.0797945 10.7404 0.220969 12.5304C0.521733 14.5194 0.621988 16.5083 0.621988 18.5967C0.621988 22.5746 1.02301 26.4531 1.02301 30.431C0.621988 30.8288 0.521733 31.326 0.922752 31.8233C1.12326 32.0222 1.32377 32.2211 1.52428 32.3205C2.52683 33.0167 5.13345 32.42 5.13345 31.0277C5.13345 26.9503 4.83268 22.873 4.73243 18.6962C4.73243 18.2984 4.73243 17.9006 4.73243 17.5028C4.83268 17.6023 4.83268 17.8012 4.93294 17.9006C5.53447 19.4918 6.23625 21.0829 7.13854 22.5746C8.04083 24.0664 8.44185 25.6575 8.94312 27.2487C8.74261 27.4476 8.64236 27.7459 8.74262 27.9448C8.74262 28.1437 8.84287 28.2432 9.04338 28.3426C9.64491 28.8399 10.848 28.641 11.5497 28.3426C11.8505 28.2432 12.1513 28.0443 12.3518 27.9448C12.6525 27.7459 13.2541 27.2487 13.0536 26.7514C13.0536 26.652 12.9533 26.5526 12.9533 26.4531C13.4546 25.1603 13.6551 23.8675 13.9559 22.5746C14.2566 21.1824 14.7579 19.7901 15.2592 18.4973C15.3594 19.094 15.3594 19.6907 15.4597 20.3868C15.6602 22.9724 15.4597 25.4586 15.4597 27.9448C15.4597 28.7404 15.5599 29.536 15.6602 30.431C15.7604 30.7294 16.0612 32.2211 15.9609 32.3205C15.1589 32.8178 15.3594 33.4144 16.1615 33.6133C17.0638 33.8122 18.2668 33.5139 18.9686 32.9172C20.1716 31.8233 19.5701 30.1327 19.3696 28.7404C18.8683 26.3537 19.3696 23.768 19.2694 21.3813Z" fill="black"/>
             <path d="M27.6907 22.0774C27.5905 20.0884 26.8887 18.1989 26.8887 16.21C26.8887 13.9227 27.0892 11.6354 26.6882 9.34808C26.5879 8.65195 22.5777 9.44753 22.7783 10.3426C23.079 12.431 22.9788 14.5194 22.9788 16.7072C22.9788 18.6962 23.48 20.5857 23.6805 22.5746C23.9813 24.663 23.5803 26.7514 23.7808 28.7404C23.8811 29.7349 24.5828 31.4255 23.8811 32.3205C23.48 32.8177 25.3849 32.6189 25.4851 32.6189C26.2872 32.5194 27.2897 32.2211 27.791 31.6244C28.4928 30.8288 27.9915 29.2376 27.8912 28.2432C27.5905 26.2542 27.791 24.0663 27.6907 22.0774Z" fill="black"/>
